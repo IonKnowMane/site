@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a7c80;
+  color: rgb(220, 220, 220);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Glassmorphism card effect */
+#card {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  margin-bottom: 20px;
+  padding: 2.5rem;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "bs1 bs1 bs1 ig ig"
+    "bs1 bs1 bs1 shi shi"
+    "bs3 bs3 bs4 bs4 bs4"
+    "bs3 bs3 bs5 bs5 bs5";
+}
+
+.bs1 {
+  grid-area: bs1;
+}
+
+.ig {
+  grid-area: ig;
+}
+
+.bs3 {
+  grid-area: bs3;
+}
+
+.bs4 {
+  grid-area: bs4;
+}
+
+.bs5 {
+  grid-area: bs5;
+}
+
+.shi {
+  grid-area: shi;
+}
