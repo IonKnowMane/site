@@ -1,0 +1,40 @@
+:root {
+  --bg: #212121;
+  --white: #ffffff; /*#bebebe  #e0e0e0*/
+  --card1: #212121;
+  --card2: #141414;
+}
+
+body {
+  background: var(--bg);
+}
+
+.card {
+  border-radius: 40px;
+  background: #212121;
+  box-shadow: 5px 5px 5px #141414, -5px -5px 5px #2e2e2e;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  margin: 2rem, 2rem, 2rem, 2rem;
+}
+
+#in {
+}
+
+#out .card_in {
+  border-radius: 40px;
+  background: #212121;
+  box-shadow: inset 5px 5px 5px #141414, inset -5px -5px 5px #2e2e2e;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2rem;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+}
